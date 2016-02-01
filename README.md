@@ -44,4 +44,4 @@ $ pod install
 
 ## License
 
-AFNetworking is released under the MIT license. See LICENSE for details.
+CocoaTouchFramework is released under the MIT license. See LICENSE for details.
