@@ -10,5 +10,4 @@ s.source           = { :git => "https://github.com/balajiaugusta/CocoaTouchFrame
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 s.source_files = 'CocoTouchFrameOne.framework/Headers/CocoTouchFrameOne.h'
-
 end
