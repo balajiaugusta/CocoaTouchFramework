@@ -1,0 +1,6 @@
+framework module CocoTouchFrameOne {
+  umbrella header "CocoTouchFrameOne.h"
+
+  export *
+  module * { export * }
+}
