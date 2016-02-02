@@ -9,7 +9,8 @@ s.author           = { "balajiaugusta" => "gbalaji@augustasoftsol.com" }
 s.source           = { :git => "https://github.com/balajiaugusta/CocoaTouchFramework.git", :tag => s.version.to_s }
 s.platform     = :ios, '8.0'
 s.requires_arc = true
-s.source_files = 'CocoTouchFrameOne.framework/CocoTouchFrameOne'
+s.public_header_files = 'CocoTouchFrameOne.framework/Headers/CocoTouchFrameOne.h'
+s.source_files = 'CocoTouchFrameOne.framework/Headers/CocoTouchFrameOne.h'
 s.resources		= 'CocoTouchFrameOne.framework/{BorderView,HomeViewController,SuccessViewController}.nib', 'CocoTouchFrameOne.framework/Info.plist'
 
   s.subspec 'Headers' do |ss|
