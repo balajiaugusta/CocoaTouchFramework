@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "CocoaTouchFramework"
-s.version          = "1.0.4"
+s.version          = "1.0.5"
 s.summary          = "cocoa touch framework"
 s.description      = "A sample cocoa touch framework with contains of model view controllers"
 s.homepage         = "https://github.com/balajiaugusta/CocoaTouchFramework"
@@ -16,5 +16,13 @@ s.resources		= 'CocoTouchFrameOne.framework/{BorderView,HomeViewController,Succe
   s.subspec 'Headers' do |ss|
     ss.source_files = 'CocoTouchFrameOne.framework/Headers'
   end
+
+pch_AF = <<-EOS
+#ifndef TARGET_OS_IOS
+  #define TARGET_OS_IOS TARGET_OS_IPHONE
+#endif
+EOS
+    
+s.ios.deployment_target = '8.0'
 
 end
