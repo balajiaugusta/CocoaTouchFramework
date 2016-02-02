@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "CocoaTouchFramework"
-s.version          = "1.0.2"
+s.version          = "1.0.3"
 s.summary          = "cocoa touch framework"
 s.description      = "A sample cocoa touch framework with contains of model view controllers"
 s.homepage         = "https://github.com/balajiaugusta/CocoaTouchFramework"
@@ -10,5 +10,10 @@ s.source           = { :git => "https://github.com/balajiaugusta/CocoaTouchFrame
 s.platform     = :ios, '8.0'
 s.requires_arc = true
 s.source_files = 'CocoTouchFrameOne.framework/CocoTouchFrameOne'
+s.resources		= 'CocoTouchFrameOne.framework/{BorderView,HomeViewController,SuccessViewController}.nib', 'CocoTouchFrameOne.framework/Info.plist'
+
+  s.subspec 'Headers' do |ss|
+    ss.source_files = 'CocoTouchFrameOne.framework/Headers'
+  end
 
 end
