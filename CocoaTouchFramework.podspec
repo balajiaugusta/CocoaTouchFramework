@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "CocoaTouchFramework"
-s.version          = "1.0.3"
+s.version          = "1.0.4"
 s.summary          = "cocoa touch framework"
 s.description      = "A sample cocoa touch framework with contains of model view controllers"
 s.homepage         = "https://github.com/balajiaugusta/CocoaTouchFramework"
